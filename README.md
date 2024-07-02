@@ -1,8 +1,8 @@
-# ParthaPratimRay_CV
+# ParthaPratimRayCV
 
 This repo contains my CV.
 
-ParthaPratimRay_CV is a CV with all details.
+ParthaPratimRayCV is a CV with all details.
 
 Resume_ParthaPratimRay is a resume with 1 page brief information.
 
