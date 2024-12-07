@@ -26,7 +26,7 @@
 	\begin{center}
 		{\LARGE \textbf{Partha Pratim Ray}}\\
 		\vspace{1mm}
-		\textit{Assistant Professor • Senior Researcher • IoT, Edge Computing and LLM Specialist}\\
+		Assistant Professor • Researcher • IoT, Edge Computing and LLM\\
 		\vspace{1mm}
 		\begin{tabular}{rl}
 			\textbf{Email:} & \href{mailto:parthapratimray1986@gmail.com}{parthapratimray1986@gmail.com} \\
@@ -39,8 +39,8 @@
 	
 	\section*{Professional Summary}
 	
-Experienced academic with 12+ years of expertise in IoT and Edge Computing, recognized among the world’s top 2\% scientists by Stanford University (2020–2024). Proven skills in developing scalable IoT and edge solutions for smart systems and healthcare. Currently transitioning to specialize in Large Language Models (LLMs) and Machine Learning (ML), focusing on quantized LLMs and open-source AI applications on edge. Seeking to bridge research and practical innovations in AI, ML, and LLMs for real-world challenges. Currently seeking internships to deepen expertise in LLM, ML, and AI, with the objective of transitioning into the IT industry to apply academic insights to industry challenges.
-
+	Experienced academic with 12+ years of expertise in IoT and Edge Computing, recognized among the world’s top 2\% scientists by Stanford University (2020–2024). Proven skills in developing scalable IoT and edge solutions for smart systems and healthcare. Currently transitioning to specialize in Large Language Models (LLMs) and Machine Learning (ML), focusing on quantized LLMs and open-source AI applications on edge. Seeking to bridge research and practical innovations in AI, ML, and LLMs for real-world challenges. Currently seeking internships and collaborations to deepen expertise in LLM, and ML with the objective of transitioning into the IT industry along with becoming a versatile educator.
+	
 	
 	\section*{Education}
 	
@@ -63,12 +63,83 @@ Experienced academic with 12+ years of expertise in IoT and Edge Computing, reco
 	
 	\begin{tabular}{ll}
 		\textbf{Programming Languages:} &  C, Java, HTML, Python \\
-		\textbf{AI/ML/LLM Frameworks:} & \textbf{Familiar:} Ollama, PyTorch, scikit-learn, Pandas, NumPy, Matplotlib, NLTK\\
-	    \textbf{Tools and Platforms:} & Raspberry Pi, Arduino, ESP32, MKR1000, FastAPI, Flask, Sanic, RESTful APIs \\
+		\textbf{AI/ML/LLM Frameworks:} & \textbf{Familiar:} Ollama, scikit-learn, Pandas, NumPy, Matplotlib, Sentence Transformer\\
+		\textbf{Tools and Platforms:} & Raspberry Pi, Arduino, ESP32,  FastAPI, Flask, RESTful API, Quantized LLMs \\
 		\textbf{Research \& Analytics:} & IoT, Edge Computing, Large Language Models, Machine Learning Algorithms \\
 		\textbf{Certifications:} & Certified Blockchain Expert-V2, Mastering Digital Twins \\
 		\textbf{Soft Skills:} & Mentoring, Research \& Analysis, Technical Article Writing \& Publication \\
 	\end{tabular}
+	
+	
+	\section*{Key Projects}
+	
+	
+	\textbf{Sequential Agent} \hfill \textit{}\\
+	Developed sequential agent using local LLM on resource-constrained edge
+	\begin{itemize}[leftmargin=0.2in]
+		\item Designed multiple sequential \textit{squad} agents to process user prompts as tasks by allotting some tasks per agent such as 1, 2 , 4 and 8 for agents such as 2, 4, 8, and 16 with collaborative approach.
+		\item It used yaml for designing agents and tasks with agents role, goal, backstory, context, output file directory and other configurations. such as all-minilm:33m, redis, Ollama, qwen2.5:0.5b-instruct, FastAPI ad Quad core Cortex-A72.
+		
+	\end{itemize}
+	
+	\textbf{Function Call Chaining} \hfill \textit{}\\
+	Developed function call chaining using local LLM on resource-constrained edge
+	\begin{itemize}[leftmargin=0.2in]
+		\item Designed multiple functions to process output of one as input to other function in sequential manner with remote API call and local external functions.
+		\item It used Ollama,qwen2.5:0.5b-instruct, llama3.2:1b-instruct-q4\_K\_M, smollm2:1.7b-instruct-q4\_K\_M, all-minilm:33m, FastAPI and Quad core ARM v8 64-bit SoC.
+		
+	\end{itemize}
+	
+	\textbf{Sequential Function Call} \hfill \textit{}\\
+	Developed function call chaining using local LLM on resource-constrained edge
+	\begin{itemize}[leftmargin=0.2in]
+		\item Designed multiple functions to process sequential manner with remote API call and local external functions using one-shot and few-shot.
+		\item It used Ollama,qwen2.5:0.5b-instruct, llama3.2:1b-instruct-q4\_K\_M, all-minilm:33m, FastAPI ad Quad core  SoC.
+		
+	\end{itemize}
+	
+	\textbf{Semantic Static Routing} \hfill \textit{}\\
+	Developed static routing using local LLM on resource-constrained edge
+	\begin{itemize}[leftmargin=0.2in]
+		\item Designed multiple static routes to process user prompt for optimal en-routing to optimal LLM calls.
+		\item It used utterance based approach per static route which were compared against sentence transformer such as all-minilm:33m, nomic-embed-text, snowflake-arctic-embed:110m, and mxbai-embed-large
+		with Ollama,qwen2.5:0.5b-instruct, FastAPI and Quad core 64-bit SoC.
+		
+	\end{itemize}
+	
+	
+	\textbf{Semantic Dynamic Routing} \hfill \textit{}\\
+	Developed dynamic routing using local LLM on resource-constrained edge
+	\begin{itemize}[leftmargin=0.2in]
+		\item Designed multiple static routes to process user prompt for optimal en-routing to optimal LLM calls by triggering designated functions using zero-shot, one-shot and few-shot approach with dynamic function schema design.
+		\item It used utterance based approach per static route which were compared against sentence transformer such as all-minilm:33m, nomic-embed-text, snowflake-arctic-embed:110m, and mxbai-embed-large
+		with Ollama, qwen2:0.5b-instruct, FastAPI and ARM v8. 
+		
+	\end{itemize}
+	
+	\textbf{IoT Integration with LLM} \hfill \textit{}\\
+	Developed \textit{LLMIoT} and \textit{LLMEdge} - frameworks for integrating IoT with localized LLMs using resource constrained edge scenario.
+	\begin{itemize}[leftmargin=0.2in]
+		\item Designed framework that employed IoT clients to communicate with local RESTful API based LLMs on constrained edge device.
+		\item It used utterance based approach per static route which were compared against sentence transformer such as ESP32, ESP8266 and ARduino MKR1000 with Ollama, qwen2:0.5b, FastAPI and ARM v8 over Wi-Fi. 
+		
+	\end{itemize}
+	
+	\textbf{Linguistic Relativity with ChatGPT} \hfill \textit{}\\
+	Developed an experiment of hypothesis testing about the applicability of linguistic relativity of various language specific prompts asked to and responded back from ChatGPT 4 mini.
+	\begin{itemize}[leftmargin=0.2in]
+		\item Designed hypotheses to test whether linguistic relativity is applied on ChatGPT-based multilingual prompt responses.
+		\item It used paraphrase-multilingual-MiniLM-L12-v2 sentence transformer to compare semantic similarity across multiple languages responses. Performed \textit{polarity} comparison across the responses of the languages by using \textit{'polyglot'} package. 
+		
+	\end{itemize}
+	
+	\textbf{API-aware Image and Video Generation Database System} \hfill \textit{}\\
+	Developed a workflow for generating AI-driven, API-aware images and videos based on text prompts, storing the generated content and logs in databases, and serving the results through a web interface.
+	\begin{itemize}[leftmargin=0.2in]
+		\item Designed a full-stack project to help user getting image (png format) and videos (mp4 format) in local system using user login data.
+		\item It used DALL-E-3 for image generation, base64 for converting image download in local machine along with the text prompt to API call RunwayML for 5s video generation and download in local directory. Developed sqlite3, Flask API and sqlalchemy aware databases to manage content and user activity. 
+		
+	\end{itemize}
 	
 	\section*{Professional Experience}
 	
@@ -104,6 +175,17 @@ Experienced academic with 12+ years of expertise in IoT and Edge Computing, reco
 	
 	\section*{Selected Publications}
 	
+	\textbf{Metrics (Dynamic)}
+	\begin{enumerate}[leftmargin=0.2in]
+		\item \textbf{Scholar}: H-index 39, i10-index 68, Citations 9883
+		\item \textbf{Journals}: SCI Journals 108, SSCI Journals 1, Scopus Journals 21
+		\item \textbf{Conference Proceedings}: 36
+		\item \textbf{Book Chapters}: 5  
+		\item \textbf{Books}: 7
+		\item \textbf{Patents Filed}: 7
+		\item \textbf{Projects/Dissertations Guided}: 17
+	\end{enumerate}
+	
 	\textit{For a complete list of publications, please visit my \href{https://scholar.google.co.in/citations?user=ioplfagAAAAJ&hl=en&oi=ao}{Google Scholar profile}.}
 	
 	\textbf{Journal Articles}
@@ -115,19 +197,13 @@ Experienced academic with 12+ years of expertise in IoT and Edge Computing, reco
 		\item \textbf{Ray, P. P.}, “Stepping With Caution: Large Language Models for Consulting Infectious Diseases,” \textit{Clinical Infectious Diseases}, Oxford University Press, 2024.
 	\end{enumerate}
 	
-	\section*{Patents Filed}
-   \textit{For a complete list of patent publications, please visit my \href{https://scholar.google.co.in/citations?user=ioplfagAAAAJ&hl=en&oi=ao}{Google Scholar profile}.}
-	\begin{itemize}[leftmargin=0.15in]
-
-		\item “Real-Time Monitoring of Non-Invasive Intravenous Fluid Level for Pervasive and Assistive e-Healthcare using IoT,” Application No: 201831049716, 2019.
-	\end{itemize}
 	
 	\section*{Projects and Consultancy}
 	
 	\begin{itemize}[leftmargin=0.15in]
 		\item \textbf{IoT-Based Plant Temperature Monitoring Systems}, Funded by Sikkim University, 2024--25.
 		\item \textbf{Intel IoT Center Setup}, Received Intel Galileo kits from Intel India, 2015--16.
-
+		
 	\end{itemize}
 	
 	\section*{Certifications}
@@ -136,12 +212,13 @@ Experienced academic with 12+ years of expertise in IoT and Edge Computing, reco
 		\item \textbf{Certified Blockchain Expert-V2}, Blockchain Council, 2018.
 		\item \textbf{Blockchain and Bitcoin Fundamentals}, Udemy, 2018.
 		\item \textbf{Mastering Digital Twins}, Coursera, 2019.
-		\item \textbf{Annual Refresher Programme in Teaching (ARPIT)}, UGC SWAYAM, 2019.
 	\end{itemize}
 	
 	\section*{Awards \& Achievements}
 	
 	\begin{itemize}[leftmargin=0.15in]
+		\item \textbf{Best Paper}, LLMIoT: A Framework for Integration of IoT Devices for Localized Large Language
+		Models in the AICTA 2024 at NIT Raipur, 2024.
 		\item \textbf{Fellow}, The Institution of Electronics \& Telecommunication Engineers (IETE), 2023.
 		\item \textbf{World's Top 2\% Scientist}, Stanford University, 2020--2024.
 		\item \textbf{IEI Young Engineers Award}, The Institution of Engineers (India), 2019--20.
@@ -151,22 +228,26 @@ Experienced academic with 12+ years of expertise in IoT and Edge Computing, reco
 		\item \textbf{Bharat Vikas Award}, Institute of Self Reliance, 2017.
 		\item \textbf{Best Professor in IT Academic Excellence Award}, ICBM-AMP, 2017.
 		\item \textbf{Young Achiever Award}, IEAE, 2018.
+		\item \textbf{Academia Liaison Officer} of IEEE CTSoc IoT Technical Committee (2024).
+		
+		
 	\end{itemize}
 	
 	\section*{Professional Memberships}
 	
 	\begin{itemize}[leftmargin=0.15in]
-		\item \textbf{Senior Member}, IEEE
 		\item \textbf{Fellow}, IETE
+		\item \textbf{Senior Member}, IEEE
 		\item \textbf{Member}, ACM, CSI, IEI, IETE, IET, ISCA, IACSIT
 	\end{itemize}
 	
 	\section*{Additional Information}
 	
 	\begin{itemize}[leftmargin=0.15in]
-		\item \textbf{Languages:} English, Hindi, Bengali
+		\item \textbf{Languages:} Bengali, Hindi, English
 		\item \textbf{Hobbies:} Writing Articles and Books, Open-Source Contribution, Mentoring Students
 		\item \textbf{Volunteer Work:} IEEE CSI Chapter Council Executive Body Member
+		\item \textbf{Founder:} Founded Indian Knowledge Forum (IKF) for Dissemination of Ancient and True Indian Knowledge
 	\end{itemize}
 	
 	\vfill
